@@ -1,0 +1,16 @@
+# aliases for both zsh and bash
+
+alias ..='cd ..'
+
+alias grep='grep -n --color'
+
+alias l='ls --color -p'
+alias ls='ls --color -p' # color output on Linux
+alias sl='ls --color -p'
+
+alias untar='tar -zxvf'
+
+alias upper='tr "[:lower:]" "[:upper:]"'
+alias lower='tr "[:upper:]" "[:lower:]"'
+
+alias format-json="python3 -c \"import sys, json; format=(lambda x: json.dumps(json.loads(x), indent=4)); print('\\n'.join([format(open(x).read()) for x in sys.argv[1:]] if len(sys.argv) > 1 else [format(sys.stdin.read())]))\""

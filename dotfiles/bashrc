@@ -1,0 +1,10 @@
+export PS1="\[\033[38;5;1m\]\u\[$(tput sgr0)\]@\[$(tput sgr0)\]\[\033[38;5;1m\]\H\[$(tput sgr0)\]:\w\\$ \[$(tput sgr0)\]"
+
+source $HOME/.aliases
+source $HOME/.exports
+
+[[ -r /etc/bash_completion ]] && source /etc/bash_completion
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi

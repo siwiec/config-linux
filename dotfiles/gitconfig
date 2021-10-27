@@ -1,0 +1,10 @@
+[user]
+    email = mat.siwiec@gmail.com
+    name = Mateusz Siwiec
+[core]
+	editor = vim
+[alias]
+    st = status
+    tree = log --all --graph --decorate --oneline
+[diff]
+	tool = vimdiff
