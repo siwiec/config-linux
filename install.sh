@@ -14,7 +14,6 @@ sudo apt-get -y install \
     netcat \
     wget \
     subversion \
-    chromium-browser \
     traceroute \
     qbittorrent \
     p7zip-full \
